@@ -1,16 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: This is a subtitle
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Maciej (some people call me Mac):
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- come from Poland
+- I do some Javascript
+- I like coffee, no milk no sugar
+- live in UK
 
 What else do you need?
 
 ### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+To be honest, I'm not the guy who loves sharing everything to strangers on the Internet but contact me if you need more **secret** knowledge about me :)
