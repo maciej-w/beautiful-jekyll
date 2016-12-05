@@ -1,17 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: This is a subtitle
+subtitle: Amazing subtitle
 ---
 
 My name is Maciej (some people call me Mac):
 
-- come from Poland
 - I do some Javascript
 - I like coffee, no milk no sugar
-- live in UK
-
-What else do you need?
+- from Poland
+- live in UK (surprise, surprise!)
+- have on kid - Antoni
 
 ### my history
 
