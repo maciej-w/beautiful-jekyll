@@ -5,7 +5,7 @@ date:   2016-11-30 20:45:57 +0000
 categories: Javascript Angular mDesign Infinity
 ---
 
-##Today I'll quickly show you how to set up an Angular 2 project with Typescript support.
+### How to set up an Angular 2 project with Typescript in < 10 minutes.
 
 Angular 2 is greatly designed to co-operate with [typescript] and [nativescript]. I won't focus on nativescript, but briefly it has 
 great support if you want to develop for mobile using Angular 2. 
@@ -23,16 +23,14 @@ npm install -g typescript
 {% endhighlight %} 
 
 
-Angular provides a command line utility tool called Angular CLI - it's great, it lets you add components and all their dependencies (to ng-module for example)
-automatically. To install it just type:
+Angular provides a command line utility tool called Angular CLI - it's great, it lets you add components and all their dependencies (to ng-module for example) automatically. To install it just type:
 
 {% highlight shell %}
 npm install -g angular-cli@1.0.0-beta.18
 {% endhighlight %} 
 
 
-After a long install, if using Linux or Mac, you might get an error regarding watchman - it is used to obeserve changes in your files and
-restarting the server running your app - something like nodeman for node.js apps. To install it just run:
+After a long install, if using Linux or Mac, you might get an error regarding watchman - it is used to observe changes in your files and restarting the server running your app - something like nodeman for node.js apps. To install it just run:
 
 {% highlight shell %}
 brew install watchman
@@ -55,7 +53,7 @@ We've got:
 - watchman
 - homebrew
 
-##Now we can finally build our first Angular 2 project using Angular CLI.
+### Now we can finally build our first Angular 2 project using Angular CLI.
 
 Enter your project or documents directory and run:
 
@@ -81,7 +79,7 @@ ng serve
 
 Ta da! In the browser open http://localhost:4200
 
-Your're product is up and running!
+Your're app is up and running!
 
 [typescript]: https://www.typescriptlang.org/
 [nativescript]: https://www.nativescript.org/
