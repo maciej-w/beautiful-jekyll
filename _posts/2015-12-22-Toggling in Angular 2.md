@@ -2,10 +2,10 @@
 layout: post
 title: How to toggle a CSS class on click in Angular 2
 subtitle: Exciting stuff
-bigimg: https://postimg.org/image/hxj5pxhs9/
+bigimg: ../img/analog.jpg
 ---
 
-###Sometimes we want to have a possibility of applying a class to an HTML element after clicking it. This, thanks to the (click) element of Angular 2, makes the whole process pretty straightforward.
+### Sometimes we want to have a possibility of applying a class to an HTML element after clicking it. This, thanks to the (click) element of Angular 2, makes the whole process pretty straightforward.
 
 Suppose you're using Bootstrap 3 this is how your element could look like:
 
