@@ -9,7 +9,7 @@ bigimg: ../img/analog.jpg
 
 Suppose you're using Bootstrap 3 this is how your element could look like:
 
-{% highlight javascript %}
+{% highlight html %}
 <a class="btn btn-app"
    (click)="isSelected = !isSelected"
    [ngClass]="{'button-selected': isSelected}"
@@ -20,7 +20,7 @@ Suppose you're using Bootstrap 3 this is how your element could look like:
 
 The following bit of code is an output, because it is enclosed in () and it handles events flow out of the component. In this particular example it's a click, but it can handle our own events set up in the component class.
 
-{% highlight javascript %}
+{% highlight html %}
 (click)="isSelected = !isSelected"
 {% endhighlight %} 
 
@@ -38,16 +38,16 @@ I want it to be set to false, so the class which adds a green border doesn't app
 
 The following bit:
 
-{% highlight javascript %}
+{% highlight html %}
 [ngClass]="{'button-selected': isSelected}"
 {% endhighlight %} 
 
-Like you might guess [ngClass] is responsible for changing an element class based on a condition in this example. This how it works: button-selected is the name of the class and we want to apply it when isSelected is true. That's why I've set up isSelected=false at the beginning.
+Like you might have guessed [ngClass] is responsible for changing an element class based on a condition in this example. This how it works: button-selected is the name of the class and we want to apply it when isSelected is true. That's why I've set up isSelected=false at the beginning.
 
 **button-selected must be wrapped in single quotes as it contains a -. In javascript you would have to use [] to use it, in Angular is single quotes**
 
-As you can see using 2 angular elements we can apply different classes to object based on conditions. If you'd like to apply more that one class or condition to [ngClass] you could do it this way:
+As you can see using 2 angular elements we can apply different classes to object based on conditions. If you'd like to apply more that one condition to [ngClass] you could do it this way:
 
-{% highlight javascript %}
+{% highlight html %}
 [ngClass]="{'button-selected': isSelected, 'has-error':!myForm.controls['button'].valid}"
 {% endhighlight %} 
