@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Setting up Angular 2 project"
-date:   2016-11-30 20:45:57 +0000
-categories: Javascript Angular mDesign Infinity
+subtitle: Set it up!
+bigimg: ../img/analog.jpg
 ---
 
 ### How to set up an Angular 2 project with Typescript in < 10 minutes.
