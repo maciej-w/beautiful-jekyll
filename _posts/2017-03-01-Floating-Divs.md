@@ -36,6 +36,6 @@ Fix is pretty easy. We create an empty div and apply a clear:both style to it an
 <div style="clear:both"></div>
 {% endhighlight %} 
 
-<script async src="//jsfiddle.net/alexwas/95m3fe2g/embed/"></script>
+<script async src="jsfiddle.net/alexwas/95m3fe2g/2/"></script>
 
 And that's it!
