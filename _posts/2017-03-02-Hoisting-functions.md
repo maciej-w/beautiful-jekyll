@@ -10,6 +10,7 @@ bigimg: ../img/analog.jpg
 As a quick reminder
 
 ** Function Declaration:
+
 {% highlight javascript %}
 function declaration () {
   return "function declaration!"
@@ -17,13 +18,14 @@ function declaration () {
 {% endhighlight %}
 
 ** Function Expression:
-//anonymous function expression
+
+anonymous function expression
 {% highlight javascript %}
 var expression = function () {
   return "anonymous function expression!"
 }
 
-//named function expression
+named function expression
 {% highlight javascript %}
 var expression = function expression () {
   return "named function expression!"
