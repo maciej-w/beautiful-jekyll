@@ -19,18 +19,18 @@ function declaration () {
 
 ** Function Expression:
 
-anonymous function expression
+Anonymous function expression
 {% highlight javascript %}
 var expression = function () {
   return "anonymous function expression!"
 }
+{% endhighlight %}
 
-named function expression
+Named function expression
 {% highlight javascript %}
 var expression = function expression () {
   return "named function expression!"
 }
-
 {% endhighlight %}
 
 What gets returned in this case?
