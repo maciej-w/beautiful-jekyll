@@ -110,6 +110,7 @@ function testMe(){
     };
 }
 alert(testMe());
+{% endhighlight %} 
 
 In this case two variables got hoisted to the top of the scope, then a function has been assigned to it and we returned that value. 
 
