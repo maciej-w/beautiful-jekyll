@@ -12,15 +12,24 @@ Most solutions are paid, but I don't need one, I want to feel secure and MSE is 
 The only thing you need to know that this is a 'hack' - that means that MSE is not supported to work on 2012 R2.
 Instructions: 
 
-Download a copy of MSE from Microsoft: http://windows.microsoft.com/en-us/windows/security-essentials-all-versions
-Right Click on the "mseinstall.exe".
-Click on Properties.
-Click on the "Compatibility"-tab.
-Locate the "Compatibility mode"-section.
-Check "Run this program in compatibility mode for:".
-Select From the (now active) dropdown menu "Windows 7".
-Open a Command Prompt as Administrator.
-cd to your Downloads folder (ie. cd C:\Users\%username%\Downloads).
-Run "mseinstall /disableoslimit" and follow the installer prompts to install MSE on your Windows Server 2012.
+1) Download a copy of MSE from Microsoft: http://windows.microsoft.com/en-us/windows/security-essentials-all-versions
+
+2) Right Click on the "mseinstall.exe".
+
+3) Click on Properties.
+
+4) Click on the "Compatibility"-tab.
+
+5) Locate the "Compatibility mode"-section.
+
+6) Check "Run this program in compatibility mode for:".
+
+7) Select From the (now active) dropdown menu "Windows 7".
+
+8) Open a Command Prompt as Administrator.
+
+9) cd to your Downloads folder (ie. cd C:\Users\%username%\Downloads).
+
+10) Run "mseinstall /disableoslimit" and follow the installer prompts to install MSE on your Windows Server 2012.
 
 thanks to: http://www.pwrusr.com/system-administration/microsoft/2-free-microsoft-windows-server-2012-antivirus-solutions
