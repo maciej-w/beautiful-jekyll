@@ -13,6 +13,6 @@ So I've devided the objects to arrays and sorted, New first, Approved second the
 
 Lovely and easily explained:
 
-![Array Functions]({{ site.url }}../img/1pQk8.jpg)
+![Array Functions](../img/1pQk8.jpg)
 
 Found this on: http://stackoverflow.com/questions/8073673/how-can-i-add-new-array-elements-at-the-beginning-of-an-array-in-javascript
