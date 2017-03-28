@@ -5,11 +5,11 @@ subtitle: basic functions - argh!!
 bigimg: ../img/analog.jpg
 ---
 
-### Recently I've been working on a project where a customer asked to sort user inputs by various rules and be able to insert future forms as well.
+### Recently I've been working on a project where a customer asked to sort user inputs by various rules and be able to insert future inputs as well.
 
-We've been receiving messages with json objects which were sorted before inserted to a table but there was a possibility of adding new forms at the top.
+We've been receiving messages with json objects which were sorted before inserting to a table but there was a possibility of adding new forms at the top of table (index 0 of Array).
 
-So I've devided the objects to arrays and sorted, New first, Approved second then Completed but had to somehow insert new ones at the beginning and I discovered this basic functions - always needed push and pop only!
+Before needed only push and pop - so discovering unshift and shift was great :)
 
 Lovely and easily explained:
 
