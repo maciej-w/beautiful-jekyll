@@ -31,10 +31,10 @@ could use queryselector to locate the children and the index in question. Have a
 {% highlight javascript %}
 function removeIdx(idx){	
 	
-		var x = document.getElementById("ulClass");
-		x.querySelector("li[actionindex='"+ idx +"'][class='arrow']").style.display = "none";
-	}		
+	var x = document.getElementById("ulClass");
+	x.querySelector("li[actionindex='"+ idx +"'][class='arrow']").style.display = "none";
+}		
 {% endhighlight %} 
 
-Because our acionindex places the value in "" we need to place the whole expression in single quotes.
+Because our actionindex places the value in "" we need to place the whole expression in single quotes.
 
