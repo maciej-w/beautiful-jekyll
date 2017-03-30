@@ -5,11 +5,9 @@ subtitle: basic functions - argh!!
 bigimg: ../img/analog.jpg
 ---
 
-### Recently I've been working on a project where a customer asked to sort user inputs by various rules and be able to insert future inputs as well.
+### Recently I've been working on a project where a customer asked to sort user inputs by various rules and be able to insert future forms at the beginning of the form.
 
-We've been receiving messages with json objects which were sorted before inserting to a table but there was a possibility of adding new forms at the top of table (index 0 of Array).
-
-Before needed only push and pop - so discovering unshift and shift was great :)
+So using shift and unshift sounded like the best idea - didn't you have problems remembering which one does what?
 
 Lovely and easily explained:
 
