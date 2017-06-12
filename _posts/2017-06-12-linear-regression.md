@@ -5,6 +5,10 @@ subtitle: the cost function from the ML course by Andrew Ng
 bigimg: ../img/analog.jpg
 ---
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...">
+</script>
+
 ### This is my personal recap on the linear regression funtion with a single parameter from Coursera 
 
 Suppose we want to predict housing prices based on previous house prices which we have: 
