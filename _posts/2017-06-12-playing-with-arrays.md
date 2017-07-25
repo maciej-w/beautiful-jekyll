@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Playing with Arrays - episode I
+title: Playing with Arrays - part I
 subtitle: map function
 bigimg: ../img/analog.jpg
 ---
 
-### This function might take you to the next level. Is pretty easy to use and works with Async code.
+### The map function might take you to the next level. Is pretty easy to use and works with Async code.
 
 It might be slower then a classical for loop, but if you are planning on using Observables and playing with async arrays it's the only option.
+
+Let's suppose we've got the following array of objects:
 
 {% highlight javascript %}
 var symbols = getSymbols([
@@ -17,7 +19,7 @@ var symbols = getSymbols([
 ]);
 {% endhighlight %} 
 
-You can loop through the code above using the standard for loop and return the symbols like this:
+You can loop through the code above using the standard for loop and returns the symbol this way:
 
 {% highlight javascript %}
 function getSymbols(stocks){  
@@ -29,7 +31,7 @@ function getSymbols(stocks){
 };
 {% endhighlight %} 
 
-Or you can use build in map method:
+Or you can use the build in map method this way:
 
 {% highlight javascript %}
 function getSymbols(stocks){
@@ -39,13 +41,20 @@ function getSymbols(stocks){
 };
 {% endhighlight %} 
 
-Does the same as for loop and it's shorter. What it does it accepts a closure to which each element of the array is passed like below:
+What it does it accepts a closure to which each element of the array is passed. Have a look below:
 
 {% highlight javascript %}
-//Each element of the array is passed through this function
-//'stock' is that single array element
+/*
+* Each element of the array is passed through this closure function.
+* 'stock' is that single array element
+*/
 function(stock){
     return stock.symbol;
-// adds the stock.symbol to an 'invisible' array
+// The stock.symbol is being added to an 'invisible' array. We don't see it but it gets created behind.
 }
 {% endhighlight %} 
+
+In this case we don't have to take care of a for loop, we don't need to create new variables. We just pass our array through the map() function.
+
+If you want to check the performance have a look here:
+https://jsperf.com/map-vs-for-loop-performance/6
