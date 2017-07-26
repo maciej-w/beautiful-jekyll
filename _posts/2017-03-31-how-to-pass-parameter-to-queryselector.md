@@ -24,7 +24,7 @@ The quickest and "modern" way to locate it in the DOM is to use queryselector(),
 document.querySelector("li[actionindex='1'][class='Arrow']")
 {% endhighlight %} 
 
-But what if we want to programmatically remove an index if a condition is met but you build lists like this on other pages? 
+But what if we want to programmatically remove an index if a condition is met? 
 The solution would be to locate the parent <ul> first by using the old getElementById - don't see the reason why not in this case - and then you
 could use queryselector to locate the children and the index in question. Have a look below:
 
@@ -36,5 +36,5 @@ function removeIdx(idx){
 }		
 {% endhighlight %} 
 
-Because our actionindex places the value in "" we need to place the whole expression in single quotes.
+Because our actionindex places the value in "" we need to place the expression in single quotes.
 
