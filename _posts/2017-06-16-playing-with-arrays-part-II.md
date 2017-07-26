@@ -23,15 +23,13 @@ Let's have a look on how to return stocks with prices higher than 450.00, it's e
 
 {% highlight javascript %}
 function getHighPrices(stocks){  
-  return stocks.filter(
-    //The below is the predicate function 
-    function(stock){
+  return stocks.filter(function(stock){
       return stock.price >= 400;
   })
 };
 {% endhighlight %} 
 
-The main part of the above is a predicate function, a function which returns True or False based on a condition, in this case the
+The main part of the above is a predicate function (function(stock{...}), a function which returns True or False based on a condition, in this case the
 condition is 'stock.price >= 400'. If the result is True, the filter function pushes the 'current' stock element (e.g. {symbol:"GG", price:500.65})
 to an array. This Array is then returned by using:
 
