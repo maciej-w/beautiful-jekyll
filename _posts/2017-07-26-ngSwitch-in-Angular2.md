@@ -23,11 +23,11 @@ What if you have to add another possibility now, a var = 4? You'd have to add an
 In this case the \*ngSwitch is the best option:
 
 {% highlight html %}
-<div class="container" \[ngSwitch]="var">
-  <p \*ngSwitchCase="1">1</p>
-  <p \*ngSwitchCase="2">2</p>  
-  <p \*ngSwitchCase="3">3</p>  
-  <p \*ngSwitchDefault>Default</p>  
+<div class="container" [ngSwitch]="var">
+  <p *ngSwitchCase="1">1</p>
+  <p *ngSwitchCase="2">2</p>  
+  <p *ngSwitchCase="3">3</p>  
+  <p *ngSwitchDefault>Default</p>  
 </div>
 {% endhighlight %} 
 
