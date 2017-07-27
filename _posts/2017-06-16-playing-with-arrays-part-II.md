@@ -5,30 +5,21 @@ subtitle: filter function
 bigimg: ../img/analog.jpg
 ---
 
-### You can use \*ngSwitch when you're planning on displaying something based on a condition.
+### The filter function lets you quickly filter data from an array without using a forEach or for loop.
 
-Let's consider the following:
+We'll use the same object as before.
 
-{% highlight html %}
-<div class="container">
-  <p *ngIf="var == 1">1</p>
-  <p *ngIf="var == 2">2</p>  
-  <p *ngIf="var == 3">3</p>  
-  <p *ngIf="var != 1 && var != 2 && var != 3">Default</p>  
-</div>
-{% endhighlight %} 
+{% highlight javascript %} var symbols = getHighPrices([ {symbol:"GG", price:500.65}, {symbol:"AA", price:1085.20}, {symbol:"BB", price:135.00} ]); {% endhighlight %}
 
-What if you have to add another possibility now, a var = 4? You'd have to add another line and update the Default value.
+The great thing about filter function is that you can quickly filter your array without using forEach or a standard for loop.
 
-In this case the \*ngSwitch is the best option:
+Let's have a look on how to return stocks with prices higher than 450.00, it's easy:
 
-{% highlight html %}
-<div class="container" \[ngSwitch]="var">
-  <p \*ngSwitchCase="1">1</p>
-  <p \*ngSwitchCase="2">2</p>  
-  <p \*ngSwitchCase="3">3</p>  
-  <p \*ngSwitchDefault>Default</p>  
-</div>
-{% endhighlight %} 
+{% highlight javascript %} function getHighPrices(stocks){
+return stocks.filter(function(stock){ return stock.price >= 400; }) }; {% endhighlight %}
 
-As you can see we pass the variable to ngSwitch in the div container, so ngSwitchCase has got access to the value. The Default option is pretty 'safe' as well if we forget to add a condition as well.
+The main part of the above is a predicate function (function(stock{...}), a function which returns True or False based on a condition, in this case the condition is 'stock.price >= 400'. If the result is True, the filter function pushes the 'current' stock element (e.g. {symbol:"GG", price:500.65}) to an array. This Array is then returned by using:
+
+{% highlight javascript %} return stocks.filter(... {% endhighlight %}
+
+This way we can quickly filter arrays. In the next post I'll show you how to chain map and filter!
