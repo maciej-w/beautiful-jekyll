@@ -84,17 +84,17 @@ svc.on('start',function(){
 svc.install();
 {% endhighlight %} 
 
-Now, I use VS Code, I open the VS Code Terminal and enter the bin directory and:
+I open the VS Code Terminal, enter the bin directory and:
 
 {% highlight shell %}
 node service.js
 {% endhighlight %} 
 
-It should prompt for elevated permissions (only if you run from VS Code Terminal) Otherwise you can run just using COmmand Prompt or Powershell.
+You can do the same by using Command Prompt or Powershell.
 
-Open Services and there it is your own Windows Service running your app! Go to the browser and open localhost:3000 or http://127.0.0.1:3000 if you haven't changed the default port.
+Go to Services and there it is, your own Windows Service running your app! Go to the browser and open localhost:3000 or http://127.0.0.1:3000 if you haven't changed the default port.
 
-Now the fun part begins. I just installed handlebars-pdf using npm and added this script to app.js:
+Now the fun part begins. Install handlebars-pdf using npm and add this script to app.js:
 
 {% highlight javascript %}
 //Add to dependencies
@@ -128,11 +128,11 @@ setInterval(callSQLdb, 1500);
 
 {% endhighlight %} 
 
-OK. So I did all that and nothing! It works when you run it locally using node...
+OK. So I did all that and nothing! It works when you run it locally using node but not from the service... Luckily the node-windows module adds a daemon folder in the directory from which you run the service.js file (bin in our case) where we can find an error file.
 
 {% highlight javascript %}
 
-    at ChildProcess.<anonymous> (C:\Users\maciej.wasilewski\Documents\projects\PDF_Reports\node_modules\html-pdf\lib\pdf.js:121:17)
+    at ChildProcess.<anonymous> (C:\Users\username\Documents\projects\PDF_Reports\node_modules\html-pdf\lib\pdf.js:121:17)
     at emitTwo (events.js:106:13)
     at ChildProcess.emit (events.js:191:7)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:12)
@@ -140,7 +140,7 @@ Error: SetProcessDpiAwareness failed: "COM error 0x80070005  (Unknown error 0x0f
 
 {% endhighlight %} 
 
-Luckily the node-windows module adds a daemon folder in the directory from which you run the service.js file (bin in our case) where we can find an error file. But what does the above tells us? Apart that the error happens in html-pdf module (a handlebars-pdf dependancy) not much. Luckily I've found this gem! 
+But what does the above tells us? Apart that the error happens in html-pdf module (a handlebars-pdf dependancy) not much. Luckily I've found this gem! 
 https://stackoverflow.com/questions/37856247/html-pdf-not-creating-file-on-iis-server-with-node-js - It says that 2.0.1 fails but 1.5.0 is working fine! Let's try that!
 
 We run:
@@ -151,7 +151,7 @@ npm install html-pdf@1.5.0 --save
 
 Restart the service and success! We have a Windows service which we can start, stop, restart, write a batch file to manage so and our Dev-Ops can manage it and let us work using JS we love! 
 
-I haven't got too much time but this is how you'd run a stored proc using mssql module to pull data out of a SQL Server:
+I didn't have too much time but this is how you'd run a stored proc using mssql module to pull data out of a SQL Server:
 
 {% highlight javascript %}
 
