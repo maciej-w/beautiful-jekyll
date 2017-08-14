@@ -5,12 +5,11 @@ subtitle: Let's build a PDF Report builder using just NodeJS
 bigimg: ../img/analog.jpg
 ---
 
-### Recently I was given a task of writing a PDF Reporting solution. I ended up writing everything using Crystal Reports, due to business reliance
-### But started with this NodeJS as Windows Service setup.
+### Recently I was given a task of writing a PDF Reporting solution. I ended up writing everything using Crystal Reports, due to business reliance but started with NodeJS as Windows Service setup.
 
-My thoughts on the setup:
+My thoughts and requirements:
 - should be easy to update for 'future devs' so picked Javascript
-- hould be easy to support so a Windows service sound like a good idea
+- should be easy to support so a Windows service sound like a good idea (easy to check if it's running, can be restarted)
 
 As I like Node.js I started looking for modules and straight away found:
 - handlebars-pdf module
@@ -149,7 +148,7 @@ We run:
 npm install html-pdf@1.5.0 --save
 {% endhighlight %} 
 
-Restart the service and success! We have a Windows service which we can start, stop, restart, write a batch file to manage so and our Dev-Ops can manage it and let us work using JS we love! 
+Restart the service and success! We have a Windows service which we can start, stop, restart, write a batch file to manage so our Dev-Ops can manage it remotely and let us work using JS we love! 
 
 I didn't have too much time but this is how you'd run a stored proc using mssql module to pull data out of a SQL Server:
 
