@@ -5,12 +5,12 @@ subtitle: How to set up https://localhost
 bigimg: ../img/analog.jpg
 ---
 
-### There are some apps which require you to use https, but what if you aren't ready to deply and are still working using localhost?
+### There are some apps which require you to use https, but what if you aren't ready to deploy and are still working using localhost?
 
 There are two packages to the rescue 
 
-[mkcert](https://github.com/FiloSottile/mkcert)
-[http-server](https://www.npmjs.com/package/http-server)
+- [mkcert](https://github.com/FiloSottile/mkcert)
+- [http-server](https://www.npmjs.com/package/http-server)
 
 The first one is used to generate the certificate and key, the second one will serve our static files using the generated files.
 
