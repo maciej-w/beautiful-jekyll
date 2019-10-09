@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with arrays in Javascript
-subtitle: basic functions - argh!!
+subtitle: basic methods - argh!!
 bigimg: ../img/analog.jpg
 ---
 
